@@ -1,6 +1,6 @@
 # Clone App
 
-Demo Application Using Node.js and SQLite3
+Demo Application Using Node.js
 
 ## Installation
 
