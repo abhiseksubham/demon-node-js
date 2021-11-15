@@ -1,4 +1,4 @@
-# Goodread Clone App
+# Clone App
 
 Demo Application Using Node.js and SQLite3
 
