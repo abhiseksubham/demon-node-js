@@ -32,15 +32,14 @@ npm install express mongoose cors –save
 ```
 
 ## Configure MongoDB database & Mongoose.
-```bash
 In the app folder, we create a separate config folder for configuration with db.config.js file like this: 
+```bash
 module.exports = { url: "mongodb://localhost:27017/demo_db" };
 ```
 
 ## Define Mongoose
-```bash
 Now create app/models/index.js with the following code:
-
+```bash
 const dbConfig = require("../config/db.config.js");
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
@@ -49,9 +48,10 @@ db.mongoose = mongoose;
 db.url = dbConfig.url;
 db.tutorials = require("./tutorial.model.js")(mongoose);
 module.exports = db;
+```
 
 Don’t forget to call connect() method in server.js:
-...
+```bash
 const app = express();
 app.use(...);
 const db = require("./app/models");
