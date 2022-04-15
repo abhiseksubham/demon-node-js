@@ -11,5 +11,5 @@ app.get('/', function(req,res){
 
 
 server.listen(8080, function(){
-  console.log("server is listening on port: 3000");
+  console.log("server is listening on port: 8080");
 });
